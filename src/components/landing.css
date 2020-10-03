@@ -1,0 +1,68 @@
+.landing-main{
+    background: url("https://i.pinimg.com/originals/b9/c8/f8/b9c8f893c9a782033a01f47e0c0b1d6e.jpg") center center no-repeat;
+    min-height: 100vh;
+}
+.landing-head{
+    color: aliceblue;
+    margin-left: 1rem;
+}
+.landing-head h1{
+    font-size: 80px;
+}
+.landing-head p{
+    font-size: small;
+}
+.landing-body{
+    display: flex;
+}
+.landing-text{
+    flex: 1;
+    padding: 1rem;
+}
+.landing-text p{
+    color: antiquewhite;
+    
+}
+.landing-right{
+    flex:1;
+}
+.landing-authbox{
+    position: absolute;
+    top:80vh;
+    margin-left: 2rem;
+    border: 2px solid #943DB7;
+    padding: 1rem;
+    cursor: pointer;
+}
+.landing-authbox:hover{
+    background-color: #5F40A8;
+    color: white;
+    /* transform: scale(1.2); */
+    animation: btn;
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes btn{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+
+}
+
+
+
+
+.landing-authbox:active{
+    transform: scale(1.2);
+}
+
+.landing-authbox span{
+    font-size: larger;
+}
